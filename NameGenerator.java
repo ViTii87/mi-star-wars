@@ -7,27 +7,29 @@
  */
 public class NameGenerator
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
+    private String tuNombre;
+    private String tuApellido;
+    private String apellidoMadre;
+    private String ciudadNacimiento;
+    
+    private static final int PRIMERAS_LETRAS = 3;
+    private static final int PRIMERAS_LETRAS_MADRE = 2;
+    
     /**
      * Constructor for objects of class NameGenerator
      */
-    public NameGenerator()
+    public NameGenerator(String tuNombre, String tuApellido, String apellidoMadre, String ciudadNacimiento)
     {
-        // initialise instance variables
-        x = 0;
+       this.tuNombre = tuNombre;
+       this.tuApellido = tuApellido;
+       this.apellidoMadre = apellidoMadre;
+       this.ciudadNacimiento = ciudadNacimiento;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * Metodo que generara tu nombre de forma aleatoria
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public String generateStarWarsName(){
+        return "";
     }
 }
