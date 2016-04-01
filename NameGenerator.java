@@ -30,6 +30,10 @@ public class NameGenerator
      * Metodo que generara tu nombre de forma aleatoria
      */
     public String generateStarWarsName(){
-        return "";
+        String nombreDePelicula = null;
+        nombreDePelicula = tuApellido.substring(0, PRIMERAS_LETRAS) 
+        + tuNombre.substring(0, PRIMERAS_LETRAS).toLowerCase()
+        + " " + apellidoMadre.substring(0, PRIMERAS_LETRAS_MADRE) + ciudadNacimiento.substring(0, PRIMERAS_LETRAS).toLowerCase();
+        return nombreDePelicula;
     }
 }
